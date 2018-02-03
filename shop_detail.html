@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta  charset="UTF-8"  name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+<title>濮阳市米斯卡建设路店</title>
+ 
+ 
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shop_Detail.css">
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+ <script src="js/index.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper_icon" style="display:none">
+	 <div class="swiper-container swiper-container-horizontal swiper-container-wp8-horizontal">
+		<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+		  <div class="swiper-slide" style="width: 620px; margin-right: 30px;"><img src="images/mingChu_detail.png"></div>
+		  <div class="swiper-slide swiper-slide-prev" style="width: 620px; margin-right: 30px;"><img src="images/elMe_detail.png"></div>
+		  <div class="swiper-slide swiper-slide-active" style="width: 620px; margin-right: 30px;"><img src="images/meiTuan_detail.png"></div>
+		  <div class="swiper-slide swiper-slide-next" style="width: 620px; margin-right: 30px;"><img src="images/mingChu_detail.png"></div>
+		  <div class="swiper-slide" style="width: 620px; margin-right: 30px;"><img src="images/mingChu_detail.png"></div>
+		  <div class="swiper-slide swiper-slide-prev" style="width: 620px; margin-right: 30px;"><img src="images/elMe_detail.png"></div>
+		</div>
+		<!-- Add Pagination -->
+		<!-- Add Arrows -->
+	</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+  </div>
+  <div class="shop_service">
+	商家服务
+	
+  </div>
+	<iframe src="https://www.expoon.com/e/o4m3nrirG2e/panorama" width="100%" ></iframe>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <script>
+  
+  //让iframe的标签的高度等于浏览器的高度
+	  var time=setTimeout(function(){
+		$(".shop_service").show();
+	  },7500);
+	  
+	$("iframe").css("height",$(window).height());
+	$(".shop_service").click(function(){
+	
+		$(".swiper_icon").toggle();
+	});
+
+  
+  
+    var appendNumber = 4;
+    var prependNumber = 1;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView:1,
+      centeredSlides: true,
+      spaceBetween:20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.prependSlide([
+        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
+        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
+        ]);
+    });
+    document.querySelector('.prepend-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+    });
+    document.querySelector('.append-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
+    });
+    document.querySelector('.append-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide([
+        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
+        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
+        ]);
+    });
+  </script>
+
+
+</body></html>
