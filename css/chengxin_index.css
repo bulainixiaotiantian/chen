@@ -6,21 +6,21 @@ header{
 	position:fixed;
 	width:100%;
 	background:rgba(45,58,86,0.7);
-	height:0.58rem;
+	height:0.69rem;
 	z-index: 100;
 }
 header .title{
 	font-size:0.3rem;
 	float:left;
 	color:#fff;
-	line-height:0.58rem;
+	line-height:0.69rem;
 	font-weight:bold;
 }
 .nav_logo{
 	width:0.46rem;
 	height:0.46rem;
 	float:left;
-    margin: 0.06rem 0.15rem 0 0.12rem;
+    margin: 0.11rem 0.15rem 0 0.12rem;
 	
 	
 }
