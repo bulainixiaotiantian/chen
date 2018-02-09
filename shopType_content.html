@@ -8,14 +8,10 @@
 		<link href="css/shoptype_con.css" rel="stylesheet" type="text/css">
 		<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
 		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/swiper.min.js" type="text/javascript"></script>
 		<script src="js/index.js" type="text/javascript"></script>
 		<style>
-			.swiper-slide-prev{
-				    width: 0.80rem! important;
-				    height: 0.66rem! important;
-				    margin-right: 0.1rem! important;
-				    opacity: 1! important;
-			}
+			
 		</style>
 	</head>
 	<body>
@@ -174,17 +170,18 @@
 							</div>
 							<div class="shops_message">
 								<div class='clearfix message_icon'>
-									<div class="swiper-container swiper-container_messages">
+									<div class="swiper-container">
 									    <div class="swiper-wrapper">
-									      <div class="swiper-slide"><a href="#"><img src="images/mingchu.png"></a></div>
-									      <div class="swiper-slide"><a href="#"><img src="images/elme.png"></a></div>
-									      <div class="swiper-slide"><a href="#"><img src="images/meituan.png"></a></div>
-									      <div class="swiper-slide"><a href="#"><img src="images/elme.png"></a></div>
-									      <div class="swiper-slide"><a href="#"><img src="images/meituan.png"></a></div>
+									      <div class="swiper-slide"><img src="images/elMe_detail.png"></div> 
+									      <div class="swiper-slide"><img src="images/mingChu_detail.png"></div>
+									      <div class="swiper-slide"><img src="images/elMe_detail.png"></div>
+									      <div class="swiper-slide"><img src="images/meiTuan_detail.png"></div>
+									      <div class="swiper-slide"><img src="images/baidu_Waimai.png"></div>
+									      <div class="swiper-slide"><img src="images/elMe_detail.png"></div> 
+									      <div class="swiper-slide"><img src="images/mingChu_detail.png"></div>
 									    </div>
-								    
-								 	</div>
-								</div>
+									    <!-- Add Pagination --> 
+									</div>
 									
 								
 								<div class="name">
@@ -233,17 +230,18 @@
 							</div>
 							<div class="shops_message">
 								<div class='clearfix message_icon'>
-									
-									<div class="swiper-container swiper-container_messages">
+									<div class="swiper-container">
 									    <div class="swiper-wrapper">
-									      <div class="swiper-slide"><a href="#"><img src="images/mingchu.png"></a></div>
-									      <div class="swiper-slide"><a href="#"><img src="images/elme.png"></a></div>
-									      <div class="swiper-slide"><a href="#"><img src="images/meituan.png"></a></div>
-									      <div class="swiper-slide"><a href="#"><img src="images/elme.png"></a></div>
-									      <div class="swiper-slide"><a href="#"><img src="images/meituan.png"></a></div>
+									      <div class="swiper-slide"><img src="images/elMe_detail.png"></div> 
+									      <div class="swiper-slide"><img src="images/mingChu_detail.png"></div>
+									      <div class="swiper-slide"><img src="images/elMe_detail.png"></div>
+									      <div class="swiper-slide"><img src="images/meiTuan_detail.png"></div>
+									      <div class="swiper-slide"><img src="images/baidu_Waimai.png"></div>
+									      <div class="swiper-slide"><img src="images/elMe_detail.png"></div> 
+									      <div class="swiper-slide"><img src="images/mingChu_detail.png"></div>
 									    </div>
-								    
-								 	</div>
+									    <!-- Add Pagination -->
+									  </div>
 								</div>
 								<div class="name">
 									<div class="shop_name">东北家乡菜馆</div>
@@ -268,35 +266,18 @@
 		</footer>
 		
 		<script>
-			//------查看更多----------------------------------
-			    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 5,
-      spaceBetween: 50,
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        }
-      }
 
-    });
+		    var swiper = new Swiper('.swiper-container', {
+		      slidesPerView: 4,
+		      centeredSlides: true,
+		      spaceBetween: 30,
+		      grabCursor: true,
+		      pagination: {
+		        el: '.swiper-pagination',
+		        clickable: true,
+		      },
+		    });
+
 	  	</script>
 	</body>
 </html>
